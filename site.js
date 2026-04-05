@@ -14,3 +14,20 @@ if (navToggle && navLinks) {
     });
   });
 }
+
+const formStatus = document.querySelector("[data-form-status]");
+
+if (formStatus) {
+  const params = new URLSearchParams(window.location.search);
+  const state = params.get("submitted");
+
+  if (state === "1") {
+    formStatus.hidden = false;
+    formStatus.className = "form-status form-status-success";
+    formStatus.textContent = "Message received. It has been stored in Cloudflare.";
+  } else if (state === "0") {
+    formStatus.hidden = false;
+    formStatus.className = "form-status form-status-error";
+    formStatus.textContent = "There was a problem sending your message. Please try again.";
+  }
+}

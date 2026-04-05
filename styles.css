@@ -583,6 +583,25 @@ textarea {
   gap: 18px;
 }
 
+.form-status {
+  margin-top: 24px;
+  border-radius: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+}
+
+.form-status-success {
+  background: rgba(74, 222, 128, 0.08);
+  border-color: rgba(74, 222, 128, 0.28);
+  color: #c4f5d4;
+}
+
+.form-status-error {
+  background: rgba(248, 113, 113, 0.08);
+  border-color: rgba(248, 113, 113, 0.24);
+  color: #f2b6b6;
+}
+
 .contact-form label {
   display: grid;
   gap: 10px;
@@ -613,6 +632,18 @@ textarea {
 .contact-form textarea:focus {
   outline: 1px solid var(--accent);
   border-color: var(--accent);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .contact-stack {

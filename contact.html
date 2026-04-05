@@ -53,10 +53,15 @@
         <article class="contact-card">
           <h2>Send a message</h2>
           <p>
-            This form opens your email client so it works on static hosting without a backend.
-            When you’re ready, we can swap it to Cloudflare Forms, Formspree, or Shopify contact.
+            Send a note with the board you’re interested in, your preferred switches, and any
+            questions about layout, pricing, or availability.
           </p>
-          <form class="contact-form" action="mailto:hello@bkkeebs.com" method="post" enctype="text/plain">
+          <div class="form-status" data-form-status hidden></div>
+          <form class="contact-form" action="/api/contact" method="post">
+            <label class="sr-only" aria-hidden="true">
+              Leave this field empty
+              <input type="text" name="website" tabindex="-1" autocomplete="off" />
+            </label>
             <label>
               Name
               <input type="text" name="name" placeholder="Your name" required />
@@ -74,7 +79,7 @@
                 required
               ></textarea>
             </label>
-            <button class="btn btn-primary" type="submit">Open email draft</button>
+            <button class="btn btn-primary" type="submit">Send message</button>
           </form>
         </article>
 
