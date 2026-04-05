@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact BK Keebs for split ergonomic keyboard questions, commissions, and order support."
+    />
+    <title>Contact — BK Keebs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./site.js"></script>
+  </head>
+  <body>
+    <header class="site-shell">
+      <nav class="topbar" aria-label="Main navigation">
+        <a class="brand-mark" href="./index.html">BK<span>.</span>Keebs</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          Menu
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="./index.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./vial-guide.html">Vial Guide</a>
+          <a class="is-active" href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-shell">
+      <section class="page-hero">
+        <p class="eyebrow">Contact</p>
+        <h1>Questions, build requests, and order support.</h1>
+        <p class="hero-text">
+          Send a note with the board style you want, your preferred switches, and whether you
+          need help choosing a layout.
+        </p>
+      </section>
+
+      <section class="contact-layout">
+        <article class="contact-card">
+          <h2>Send a message</h2>
+          <p>
+            This form opens your email client so it works on static hosting without a backend.
+            When you’re ready, we can swap it to Cloudflare Forms, Formspree, or Shopify contact.
+          </p>
+          <form class="contact-form" action="mailto:hello@bkkeebs.com" method="post" enctype="text/plain">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              What are you looking for?
+              <textarea
+                name="message"
+                rows="7"
+                placeholder="Tell me which board you're interested in, budget range, and any layout preferences."
+                required
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Open email draft</button>
+          </form>
+        </article>
+
+        <aside class="contact-stack">
+          <div class="info-card">
+            <p class="card-label">Response window</p>
+            <h2>Typical replies within 1-2 business days.</h2>
+            <p>Use the Vial Guide if you need immediate setup help for a board you already own.</p>
+            <a class="inline-link" href="./vial-guide.html">Open guide →</a>
+          </div>
+          <div class="info-card">
+            <p class="card-label">Storefront</p>
+            <h2>Shop current BK Keebs listings on Etsy.</h2>
+            <p>
+              Browse available builds, check current inventory, and purchase directly through
+              the BK Keebs Etsy shop.
+            </p>
+            <a
+              class="inline-link"
+              href="https://www.etsy.com/shop/BKKeebs"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit BK Keebs on Etsy →
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer site-shell">
+      <p>BK Keebs · Cincinnati</p>
+      <div class="footer-links">
+        <a href="./shop.html">Shop</a>
+        <a href="./index.html">Home</a>
+      </div>
+    </footer>
+  </body>
+</html>

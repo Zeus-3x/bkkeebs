@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BK Keebs Vial quick-use guide for remapping split keyboards, tuning layers, and adjusting encoders."
+    />
+    <title>Vial Quick-Use Guide — BK Keebs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./site.js"></script>
+  </head>
+  <body>
+    <header class="site-shell">
+      <nav class="topbar" aria-label="Main navigation">
+        <a class="brand-mark" href="./index.html">BK<span>.</span>Keebs</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          data-nav-toggle
+        >
+          Menu
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="./index.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a class="is-active" href="./vial-guide.html">Vial Guide</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="guide-shell">
+      <section class="page-hero guide-hero">
+        <div class="guide-topline">
+          <p class="eyebrow">Customer guide</p>
+          <div class="badge">Vial quick start</div>
+        </div>
+        <h1>Getting Started with Vial</h1>
+        <p class="hero-text">
+          Vial is the easiest way to remap your keys, tune your encoder, and customize your
+          RGB in real time with no flashing required.
+        </p>
+      </section>
+
+      <section class="guide-section">
+        <div class="guide-section-header">
+          <div class="step-num">1</div>
+          <h2>Download and install Vial</h2>
+        </div>
+        <div class="guide-section-body">
+          <p>
+            Vial is available as a free desktop app for Windows, macOS, and Linux. You can
+            also use <a class="inline-link inline-link-inline" href="https://vial.rocks" target="_blank" rel="noreferrer">Vial Web</a>
+            in a supported browser without installing the app.
+          </p>
+          <div class="dl-row">
+            <a class="btn btn-secondary" href="https://get.vial.today" target="_blank" rel="noreferrer">
+              Download from get.vial.today
+            </a>
+            <a class="btn btn-secondary" href="https://vial.rocks" target="_blank" rel="noreferrer">
+              Open Vial Web
+            </a>
+            <a class="btn btn-secondary" href="https://get.vial.today/manual/" target="_blank" rel="noreferrer">
+              Read Vial Docs
+            </a>
+          </div>
+          <div class="tip-box">
+            <strong>Tip:</strong> On Windows, SmartScreen may show a warning. Click
+            <code>More info</code> then <code>Run anyway</code>. On macOS, if the app is blocked,
+            go to <code>System Settings → Privacy &amp; Security</code> and click
+            <code>Open Anyway</code>. Vial is open source.
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="guide-section-header">
+          <div class="step-num">2</div>
+          <h2>Connect your keyboard</h2>
+        </div>
+        <div class="guide-section-body">
+          <ul class="arrow-list">
+            <li>With USB unplugged, connect the TRRS cable between the two halves first.</li>
+            <li>Plug the <strong>left half</strong> into your PC with the USB-C cable. The left half is the master side.</li>
+            <li>Open Vial and your keyboard should be detected automatically.</li>
+          </ul>
+          <div class="warn-box">
+            <strong>Note:</strong> Always connect or disconnect TRRS while the keyboard is
+            unplugged from USB. Hot-swapping TRRS can damage the controllers.
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="guide-section-header">
+          <div class="step-num">3</div>
+          <h2>Navigating the interface</h2>
+        </div>
+        <div class="guide-section-body">
+          <p>Once detected, you’ll see a visual layout of your keyboard. The main tabs to use:</p>
+          <div class="tab-grid">
+            <div class="tab-card">
+              <div class="tab-name">Keymap</div>
+              <p>Remap any key on any layer from the visual layout and key picker.</p>
+            </div>
+            <div class="tab-card">
+              <div class="tab-name">Layers</div>
+              <p>Layer 0 is your base. Hold a layer key to access higher layers.</p>
+            </div>
+            <div class="tab-card">
+              <div class="tab-name">Encoder</div>
+              <p>Set scroll wheel behavior per layer, including volume, zoom, and scrolling.</p>
+            </div>
+            <div class="tab-card">
+              <div class="tab-name">Lighting</div>
+              <p>Adjust RGB effects, brightness, speed, and color directly from Vial.</p>
+            </div>
+          </div>
+          <div class="tip-box">
+            <strong>Tip:</strong> Changes save instantly to the keyboard. Your layout persists
+            when you unplug or move to another computer.
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="guide-section-header">
+          <div class="step-num">4</div>
+          <h2>Remapping a key</h2>
+        </div>
+        <div class="guide-section-body">
+          <ul class="arrow-list">
+            <li>Click the key you want to change on the keyboard diagram.</li>
+            <li>The selected key will highlight.</li>
+            <li>Choose the replacement key from the picker at the bottom.</li>
+            <li>The change applies immediately.</li>
+          </ul>
+          <div class="tip-box">
+            <strong>Pro tip:</strong> Use <code>ANY</code> to enter raw QMK keycodes like
+            <code>KC_MPLY</code>.
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section">
+        <div class="guide-section-header">
+          <div class="step-num">5</div>
+          <h2>Using layers</h2>
+        </div>
+        <div class="guide-section-body">
+          <p>
+            Layers let you keep multiple layouts on one board. Think of them like Shift: hold
+            a layer key to access another set of bindings.
+          </p>
+          <ul class="arrow-list">
+            <li>Your keyboard ships with a layer key pre-mapped, often <code>MO(1)</code>.</li>
+            <li>Hold that key and type to use Layer 1 bindings.</li>
+            <li>Switch the layer number at the top of Vial to edit that layer.</li>
+            <li><code>KC_TRNS</code> keys fall through to the layer below.</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="guide-divider" />
+
+      <section class="faq-wrap">
+        <h2 class="faq-heading">Common Questions</h2>
+        <div class="faq-list">
+          <article class="faq-card">
+            <h3>My keyboard isn’t showing up in Vial.</h3>
+            <p>
+              Make sure you’re plugging the correct half into your PC. Try another USB cable
+              or port. On Linux, you may need a udev rule from the Vial docs.
+            </p>
+          </article>
+          <article class="faq-card">
+            <h3>Will my layout reset if I unplug the keyboard?</h3>
+            <p>
+              No. Vial saves your keymap to the keyboard’s flash memory so it survives
+              unplugging, reboots, and moving computers.
+            </p>
+          </article>
+          <article class="faq-card">
+            <h3>Can I save a backup of my layout?</h3>
+            <p>
+              Yes. Use <code>File → Save Current Layout</code> to export a <code>.vil</code>
+              file, then reload it with <code>File → Load Saved Layout</code>.
+            </p>
+          </article>
+          <article class="faq-card">
+            <h3>How do I reset everything to default?</h3>
+            <p>
+              In Vial, use <code>File → Reset to Default</code> to restore the original
+              factory layout.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer guide-shell">
+      <p>Built with care in Cincinnati.</p>
+      <div class="footer-links">
+        <a href="https://www.etsy.com" target="_blank" rel="noreferrer">BK Keebs on Etsy</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>
